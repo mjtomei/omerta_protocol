@@ -1,34 +1,6 @@
-# Papers & Research
+# Papers
 
-This directory contains academic papers, whitepapers, and research documents for Omerta.
-
-## Main Papers
-
-The primary papers are in the top-level [omerta/papers/](../../papers/) directory:
-
-- **Whitepaper** (whitepaper.pdf) - Technical whitepaper (Abstract, Introduction, Related Work)
-- **Full Paper** (participation-verification.pdf) - Complete technical paper on trust-based consensus
-
-LaTeX sources with modular sections allow shared content between documents.
-
-## Economic Analysis
-
-- [Economic Analysis](economic-analysis/ECONOMIC_ANALYSIS.md) - Market dynamics of unreliable compute
-
-## Mechanism Design
-
-Formal specifications of the trust and verification mechanisms:
-
-- [Participation Verification Overview](mechanism-design/participation-verification.md) - High-level mechanism description
-- [Trust Mathematics](mechanism-design/participation-verification-math.md) - Formal specification of trust computation
-- [Defense Mechanisms](mechanism-design/participation-verification-defenses.md) - Sybil resistance and attack mitigation
-- [Vulnerability Analysis](mechanism-design/participation-verification-vulnerabilities.md) - Known attack vectors and mitigations
-- [Social Attack Analysis](mechanism-design/participation-verification-social-attacks.md) - Social engineering considerations
-- [Blockchain Comparison](mechanism-design/participation-verification-vs-blockchain.md) - Comparison with traditional blockchain approaches
-
-## Research
-
-- [TrustChain Analysis](research/TRUSTCHAIN_ANALYSIS.md) - Analysis of related work
+The main technical papers (whitepaper and full participation verification paper) are in the top-level [omerta/papers/](../../papers/) directory as PDFs with LaTeX sources.
 
 ## Simulation Reports
 

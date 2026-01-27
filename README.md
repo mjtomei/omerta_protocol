@@ -56,16 +56,17 @@ See [simulations/README.md](simulations/README.md) for details.
 
 The main technical papers (whitepaper and full participation verification paper) are in the top-level [omerta/papers/](../papers/) directory as PDFs with LaTeX sources.
 
-This repository contains supporting research documents:
+This repository contains [simulation reports](papers/simulation-reports/) with empirical validation results.
+
+## Plans
+
+Working documents for development in [plans/](plans/):
 
 | Category | Description |
 |----------|-------------|
-| [economic-analysis/](papers/economic-analysis/) | Market dynamics analysis |
-| [mechanism-design/](papers/mechanism-design/) | Trust mathematics and defense mechanisms |
-| [simulation-reports/](papers/simulation-reports/) | Empirical validation results |
-| [research/](papers/research/) | Analysis of related work |
-
-See [papers/README.md](papers/README.md) for full index.
+| [economic-analysis/](plans/economic-analysis/) | Market dynamics analysis |
+| [mechanism-design/](plans/mechanism-design/) | Trust mathematics and defense mechanisms |
+| [research/](plans/research/) | Analysis of related work |
 
 ---
 
