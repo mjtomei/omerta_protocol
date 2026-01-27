@@ -587,7 +587,7 @@ def run_equilibrium_simulation(n_rounds: int = 20, round_duration: float = 200):
                   f"${avg_earnings:.3f}/hr, {avg_completion:.1%} completion")
 
     # Save results
-    with open('/home/matt/omerta/simulations/reliability_equilibrium_results.json', 'w') as f:
+    with open('./reliability_equilibrium_results.json', 'w') as f:
         json.dump({
             'rounds': round_results,
             'final_providers': [{'id': p.id, 'threshold': p.cancellation_threshold,

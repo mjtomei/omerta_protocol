@@ -544,7 +544,7 @@ def main():
         }
     }
 
-    with open("/home/matt/omerta/simulations/identity_rotation_results.json", "w") as f:
+    with open("./identity_rotation_results.json", "w") as f:
         json.dump(all_results, f, indent=2)
 
     print(f"\nResults saved to identity_rotation_results.json")

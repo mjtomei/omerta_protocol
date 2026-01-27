@@ -554,7 +554,7 @@ def main():
         'rational': rational_results
     }
 
-    with open('/home/matt/omerta/simulations/reliability_market_results.json', 'w') as f:
+    with open('./reliability_market_results.json', 'w') as f:
         json.dump(all_results, f, indent=2, default=str)
 
     print("\nResults saved to reliability_market_results.json")
