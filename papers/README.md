@@ -2,13 +2,14 @@
 
 This directory contains academic papers, whitepapers, and research documents for Omerta.
 
-## Whitepapers
+## Main Papers
 
-- [Omerta Whitepaper](whitepaper/WHITEPAPER.md) - Executive overview of the project
+The primary papers are in the top-level [omerta/papers/](../../papers/) directory:
 
-## Technical Papers
+- **Whitepaper** (whitepaper.pdf) - Technical whitepaper (Abstract, Introduction, Related Work)
+- **Full Paper** (participation-verification.pdf) - Complete technical paper on trust-based consensus
 
-- [Participation Verification](technical-paper/PARTICIPATION_VERIFICATION.md) - Full technical paper on trust-based consensus alternative to proof-of-work
+LaTeX sources with modular sections allow shared content between documents.
 
 ## Economic Analysis
 

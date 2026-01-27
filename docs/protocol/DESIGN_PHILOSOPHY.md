@@ -3,7 +3,7 @@
 This document describes Omerta's approach to distributed transaction protocols and how it differs from other blockchain and payment channel systems.
 
 **See also:**
-- [Academic Paper](../ACADEMIC_PAPER_PARTICIPATION_VERIFICATION.md) for the full theoretical foundation and literature review
+- The full technical paper (participation-verification.pdf) in the top-level omerta/papers/ directory for the full theoretical foundation and literature review
 - [Protocol Format](FORMAT.md) for state machine DSL and primitives
 - [Code Generation](GENERATION.md) for how schemas produce documentation and executable code
 - [Simulator Design](SIMULATOR_DESIGN.md) for how generated code is tested

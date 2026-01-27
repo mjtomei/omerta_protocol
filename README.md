@@ -54,12 +54,12 @@ See [simulations/README.md](simulations/README.md) for details.
 
 ## Papers
 
-Academic papers and research documents.
+The main technical papers (whitepaper and full participation verification paper) are in the top-level [omerta/papers/](../papers/) directory as PDFs with LaTeX sources.
+
+This repository contains supporting research documents:
 
 | Category | Description |
 |----------|-------------|
-| [whitepaper/](papers/whitepaper/) | Technical whitepaper |
-| [technical-paper/](papers/technical-paper/) | Participation verification paper |
 | [economic-analysis/](papers/economic-analysis/) | Market dynamics analysis |
 | [mechanism-design/](papers/mechanism-design/) | Trust mathematics and defense mechanisms |
 | [simulation-reports/](papers/simulation-reports/) | Empirical validation results |
