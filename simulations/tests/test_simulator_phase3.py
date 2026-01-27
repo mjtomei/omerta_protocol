@@ -11,7 +11,7 @@ Tests for:
 import pytest
 import os
 
-from simulations.simulator import (
+from simulations.framework import (
     # Protocol
     ConsumerAgent,
     ProviderAgent,
@@ -36,11 +36,11 @@ from simulations.simulator import (
     NetworkModel,
     create_specific_network,
 )
-from simulations.simulator.traces.schema import (
+from simulations.framework.traces.schema import (
     TraceNetworkSpec, TraceNodeSpec,
     TraceSetup, TraceChainSpec, TraceRelationship,
 )
-from simulations.simulator.protocol.setup import (
+from simulations.framework.protocol.setup import (
     create_chain_from_spec,
     setup_relationships,
     infer_roles_from_trace,

@@ -18,7 +18,7 @@ import json
 from unittest.mock import Mock, patch, MagicMock
 from dataclasses import dataclass
 
-from simulations.simulator.agents.ai_agent import (
+from simulations.framework.agents.ai_agent import (
     AIAgent,
     AIAgentConfig,
     create_ai_agent,
@@ -30,7 +30,7 @@ from simulations.simulator.agents.ai_agent import (
     WITNESS_PROTOCOL_RULES,
     ANTHROPIC_AVAILABLE,
 )
-from simulations.simulator.agents.base import AgentContext, ActionSpec
+from simulations.framework.agents.base import AgentContext, ActionSpec
 
 
 # =============================================================================
@@ -343,7 +343,7 @@ class TestMessageQueue:
         """Agent can receive messages."""
         agent = create_ai_agent("test", "role", "goal", "rules")
 
-        from simulations.simulator.engine import Message
+        from simulations.framework.engine import Message
         msg = Message(msg_type="TEST", sender="other", payload={}, timestamp=0.0)
         agent.receive_message(msg)
 
@@ -353,7 +353,7 @@ class TestMessageQueue:
         """Getting pending messages clears the queue."""
         agent = create_ai_agent("test", "role", "goal", "rules")
 
-        from simulations.simulator.engine import Message
+        from simulations.framework.engine import Message
         msg = Message(msg_type="TEST", sender="other", payload={}, timestamp=0.0)
         agent.receive_message(msg)
 
@@ -365,7 +365,7 @@ class TestMessageQueue:
         """Reset clears message queue."""
         agent = create_ai_agent("test", "role", "goal", "rules")
 
-        from simulations.simulator.engine import Message
+        from simulations.framework.engine import Message
         msg = Message(msg_type="TEST", sender="other", payload={}, timestamp=0.0)
         agent.receive_message(msg)
 
@@ -480,7 +480,7 @@ class TestImports:
 
     def test_ai_agent_importable_from_simulator(self):
         """AI agent classes are importable from main simulator module."""
-        from simulations.simulator import (
+        from simulations.framework import (
             AIAgent,
             AIAgentConfig,
             create_ai_agent,

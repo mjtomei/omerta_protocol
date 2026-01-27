@@ -13,13 +13,13 @@ Tests for:
 import pytest
 import os
 
-from simulations.simulator import (
+from simulations.framework import (
     TraceRunner,
     TraceRunResult,
     run_trace,
     load_trace,
 )
-from simulations.simulator.assertions.evaluator import (
+from simulations.framework.assertions.evaluator import (
     assertions_passed,
     format_assertion_results,
 )
@@ -240,7 +240,7 @@ class TestRegressionTraces:
 class TestAssertionFormat:
     def test_assertion_result_formatting(self):
         """Assertion results format correctly."""
-        from simulations.simulator.assertions.evaluator import AssertionResult
+        from simulations.framework.assertions.evaluator import AssertionResult
 
         result = AssertionResult(
             assertion_type="test_type",
@@ -255,7 +255,7 @@ class TestAssertionFormat:
 
     def test_failed_assertion_formatting(self):
         """Failed assertion results show FAIL."""
-        from simulations.simulator.assertions.evaluator import AssertionResult
+        from simulations.framework.assertions.evaluator import AssertionResult
 
         result = AssertionResult(
             assertion_type="test_type",
@@ -275,27 +275,27 @@ class TestAssertionFormat:
 class TestAssertionHandlers:
     def test_lock_succeeded_handler_exists(self):
         """lock_succeeded handler is registered."""
-        from simulations.simulator.assertions.registry import ASSERTION_HANDLERS
+        from simulations.framework.assertions.registry import ASSERTION_HANDLERS
         assert "lock_succeeded" in ASSERTION_HANDLERS
 
     def test_lock_failed_handler_exists(self):
         """lock_failed handler is registered."""
-        from simulations.simulator.assertions.registry import ASSERTION_HANDLERS
+        from simulations.framework.assertions.registry import ASSERTION_HANDLERS
         assert "lock_failed" in ASSERTION_HANDLERS
 
     def test_consumer_state_handler_exists(self):
         """consumer_state handler is registered."""
-        from simulations.simulator.assertions.registry import ASSERTION_HANDLERS
+        from simulations.framework.assertions.registry import ASSERTION_HANDLERS
         assert "consumer_state" in ASSERTION_HANDLERS
 
     def test_witness_threshold_handler_exists(self):
         """witness_threshold_met handler is registered."""
-        from simulations.simulator.assertions.registry import ASSERTION_HANDLERS
+        from simulations.framework.assertions.registry import ASSERTION_HANDLERS
         assert "witness_threshold_met" in ASSERTION_HANDLERS
 
     def test_no_messages_dropped_handler_exists(self):
         """no_messages_dropped handler is registered."""
-        from simulations.simulator.assertions.registry import ASSERTION_HANDLERS
+        from simulations.framework.assertions.registry import ASSERTION_HANDLERS
         assert "no_messages_dropped" in ASSERTION_HANDLERS
 
 

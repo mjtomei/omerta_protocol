@@ -10,17 +10,17 @@ Tests for:
 import pytest
 import os
 
-from simulations.simulator.engine import Action, Message
-from simulations.simulator.agents.base import Agent, AgentContext
-from simulations.simulator.agents.trace_replay import TraceReplayAgent
-from simulations.simulator.traces.schema import (
+from simulations.framework.engine import Action, Message
+from simulations.framework.agents.base import Agent, AgentContext
+from simulations.framework.agents.trace_replay import TraceReplayAgent
+from simulations.framework.traces.schema import (
     Trace, TraceAction, TraceAssertion,
     TraceNetworkSpec, TraceNodeSpec, TracePartitionSpec,
     TraceSetup, TraceChainSpec, TraceRelationship,
     ValidationError,
 )
-from simulations.simulator.traces.parser import parse_trace, load_trace
-from simulations.simulator.network.regions import Region
+from simulations.framework.traces.parser import parse_trace, load_trace
+from simulations.framework.network.regions import Region
 
 
 # =============================================================================

@@ -14,10 +14,10 @@ Tests for:
 import pytest
 import random
 
-from simulations.simulator.engine import (
+from simulations.framework.engine import (
     Event, EventQueue, SimulationClock, Action, Message, SimulationEngine
 )
-from simulations.simulator.network import (
+from simulations.framework.network import (
     Region, get_inter_region_latency, INTER_REGION_LATENCY_MS,
     ConnectionType, CONNECTION_TYPES,
     NetworkModel, NetworkNode, sample_pareto,
