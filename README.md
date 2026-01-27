@@ -92,3 +92,13 @@ Discrete event simulation with agent-based testing to validate protocol correctn
 
 ---
 
+
+## Testing
+
+```bash
+# Install omerta_lang first
+pip install -e ../omerta_lang
+
+# Run simulation tests
+pytest simulations/tests/
+```
