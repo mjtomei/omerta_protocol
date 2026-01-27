@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omerta_protocol"
+version = "0.1.0"
+description = "Protocol specifications, simulations, and academic papers for Omerta"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "omerta_lang>=0.1.0",
+    "numpy>=1.20.0",
+    "matplotlib>=3.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["simulations*"]
+
+[tool.pytest.ini_options]
+testpaths = ["simulations/tests"]

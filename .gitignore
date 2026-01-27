@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+._*
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+.cache/
+
+# Generated transaction files (regenerated from .omt)
+simulations/transactions/*_generated.py
+
+# Backup files from lint --fix
+*.orig
+*.bak
+*.fixed-hash
+
+# IDE
+.idea/
+.vscode/
