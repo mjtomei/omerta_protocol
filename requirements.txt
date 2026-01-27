@@ -1,6 +1,7 @@
 # Core dependencies
 numpy>=1.20.0
 matplotlib>=3.5.0
+pyyaml>=6.0
 
 # omerta_lang is installed from local path (see setup instructions)
 # pip install -e ../omerta_lang
