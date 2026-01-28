@@ -70,6 +70,32 @@ Working documents for development in [plans/](plans/):
 
 ---
 
+## Development Status
+
+See [plans/notes.txt](../plans/notes.txt) for the latest human-managed TODO list.
+
+### Accomplished
+
+- [x] Transaction 00 (escrow_lock) - tested and documented
+- [x] Transaction 01 (cabal_attestation) - tested and documented
+- [x] Discrete event simulation infrastructure
+- [x] Economic simulation framework with market dynamics
+- [x] Chain primitives (block structure, gossip protocol)
+- [x] Event-driven simulation engine with AI agent integration
+- [x] Design philosophy and format documentation
+
+### TODO
+
+- [ ] Complete Transaction 02 (escrow_settle) - currently draft
+- [ ] Complete Transaction 03 (state_query) - currently draft
+- [ ] Complete Transaction 04 (state_audit) - currently draft
+- [ ] Complete Transaction 05 (health_check) - currently draft
+- [ ] Run agent-based simulations to stress-test transactions 00 and 01
+- [ ] Validate simulation results against real attack scenarios
+- [ ] Protocol update mechanism with user consensus
+- [ ] Machine fingerprinting to prevent fake verification responses
+- [ ] Plan for intermittent remote backups of local chains
+
 ## Testing
 
 ```bash
