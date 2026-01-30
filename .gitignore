@@ -42,3 +42,7 @@ simulations/transactions/*_generated.py
 # IDE
 .idea/
 .vscode/
+
+# Parent repo stub files (ignored when working inside cloned repo)
+.commit
+REPO.md
