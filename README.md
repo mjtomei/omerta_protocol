@@ -1,5 +1,7 @@
 # Omerta Protocol
 
+[![codecov](https://codecov.io/gh/mjtomei/omerta_protocol/graph/badge.svg)](https://codecov.io/gh/mjtomei/omerta_protocol)
+
 Protocol specifications, simulations, and academic papers for the Omerta project.
 
 ---
