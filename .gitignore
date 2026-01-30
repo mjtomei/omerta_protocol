@@ -45,4 +45,3 @@ simulations/transactions/*_generated.py
 
 # Parent repo stub files (ignored when working inside cloned repo)
 .commit
-REPO.md
